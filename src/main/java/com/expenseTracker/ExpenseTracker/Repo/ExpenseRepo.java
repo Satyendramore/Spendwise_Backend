@@ -35,5 +35,8 @@ public interface ExpenseRepo extends JpaRepository<Expense,Integer> {
     List<Object[]> getExpenseByCategory(String username);
 
 
+    List<Expense> findByUser_UserId(int userId);
+
+
 
 }
